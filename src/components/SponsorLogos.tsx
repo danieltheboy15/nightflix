@@ -23,6 +23,26 @@ export const SPONSORS_LIST: Sponsor[] = [
     logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574155/IMG_0189_nxmngr.png"
   },
   {
+    id: "sponsor-8",
+    name: "",
+    logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574159/IMG_0193_kef4br.png"
+  },
+  {
+    id: "sponsor-10",
+    name: "",
+    logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574162/IMG_0195_wtrpc3.png"
+  },
+  {
+    id: "sponsor-9",
+    name: "",
+    logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574160/IMG_0194_dsrl6g.png"
+  },
+  {
+    id: "sponsor-11",
+    name: "",
+    logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574225/IMG_0196_bmnt9p.jpg"
+  },
+  {
     id: "gala-chinchin",
     name: "",
     logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574155/IMG_0188_fl93rb.png"
@@ -46,26 +66,6 @@ export const SPONSORS_LIST: Sponsor[] = [
     id: "sponsor-7",
     name: "",
     logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574158/IMG_0192_pnaflk.png"
-  },
-  {
-    id: "sponsor-8",
-    name: "",
-    logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574159/IMG_0193_kef4br.png"
-  },
-  {
-    id: "sponsor-9",
-    name: "",
-    logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574160/IMG_0194_dsrl6g.png"
-  },
-  {
-    id: "sponsor-10",
-    name: "",
-    logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574162/IMG_0195_wtrpc3.png"
-  },
-  {
-    id: "sponsor-11",
-    name: "",
-    logoUrl: "https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574225/IMG_0196_bmnt9p.jpg"
   },
   {
     id: "sponsor-12",
