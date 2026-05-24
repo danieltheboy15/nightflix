@@ -1,0 +1,6 @@
+{
+  "name": "Nightflix Ibadan",
+  "description": "The biggest open-air cinema, games, music, and food experience in Ibadan under the stars.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
