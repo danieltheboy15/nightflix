@@ -22,7 +22,7 @@ export const Hero: React.FC<HeroProps> = ({ onGetTicketClick }) => {
   }, []);
 
   return (
-    <div className="relative min-h-[75vh] sm:min-h-[85vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-[#030305] mb-[30px] pt-24 pb-12 sm:pt-32">
+    <div className="relative min-h-[65vh] sm:min-h-[75vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-[#030305] mb-[30px] pt-4 pb-12 sm:pt-6">
       {/* Background Video element */}
       <div className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0 overflow-hidden bg-[#030305]">
         <video
@@ -52,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ onGetTicketClick }) => {
       </div>
 
       {/* Content wrapper */}
-      <div className="relative z-20 max-w-4xl w-full mx-auto flex flex-col items-center mt-6">
+      <div className="relative z-20 max-w-4xl w-full mx-auto flex flex-col items-center mt-2">
         {/* Neon Badge */}
         <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-red-950/40 border border-red-500/30 text-red-500 hover:border-red-500/50 transition-colors duration-300 text-xs font-semibold mb-6 animate-pulse select-none uppercase tracking-widest font-mono">
           <Sparkles className="w-3.5 h-3.5 text-yellow-500 fill-yellow-500" />
