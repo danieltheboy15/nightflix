@@ -13,7 +13,7 @@ export const TheHook: React.FC = () => {
           {/* Main heading and introduction */}
           <div className="lg:col-span-6 space-y-6">
             <span className="font-mono text-xs text-amber-500 uppercase tracking-widest flex items-center justify-center sm:justify-start gap-1.5 font-bold">
-              <Flame className="w-4 h-4 text-amber-500 fill-amber-500" />
+              
               THE NIGHTFLIX ESCAPE
             </span>
             <h2 className="font-heading font-black text-3xl sm:text-5xl text-white tracking-tight leading-tight">
@@ -24,7 +24,7 @@ export const TheHook: React.FC = () => {
 
           <div className="lg:col-span-6">
             <p className="font-sans text-neutral-300 text-base sm:text-lg leading-relaxed">
-              Whether you are coming with your partner for a romantic night under the heavens, or flying solo to escape the screens and make new friends, <strong className="text-white">Nightflix is the ultimate cure.</strong> It's a high-energy outdoor festival built specifically for film enthusiasts, gamers, and good-vibe seekers of Ibadan.
+              Whether you are coming with your partner for a romantic night under the heavens, or flying solo to escape the screens and make new friends, <strong className="text-white">Nightflix is the ultimate cure.</strong> It's a high-energy outdoor festival built specifically for film enthusiasts, gamers, and good-vibe seekers.
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ export const TheHook: React.FC = () => {
               Pre-Screening Board Games
             </h3>
             <p className="font-sans text-xs text-neutral-400 leading-relaxed">
-              Arrive early! Challenge friends and strangers to intensive multiplayer games—from retro video consoles in the Game House, to deck cards, Jenga, and local board games.
+              Arrive early! Challenge friends and strangers to intensive multiplayer games, from retro video consoles in the Game House, to deck cards, Jenga, and local board games.
             </p>
           </div>
 
