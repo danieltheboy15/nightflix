@@ -14,7 +14,7 @@ import { TicketType } from "../types";
 const TICKET_TYPES: TicketType[] = [
   {
     id: "single",
-    name: "Single Pass",
+    name: "Single",
     price: 3000,
     emoji: "🎟️",
     description: "Perfect for flying solo and meeting new people.",
@@ -27,7 +27,7 @@ const TICKET_TYPES: TicketType[] = [
   },
   {
     id: "couple",
-    name: "Couple Deal",
+    name: "Couple",
     price: 5000,
     emoji: "👩‍❤️‍👨",
     description: "A great deal for you and your partner.",
@@ -40,7 +40,7 @@ const TICKET_TYPES: TicketType[] = [
   },
   {
     id: "children",
-    name: "Children Entry",
+    name: "Children",
     price: 1500,
     emoji: "👧",
     description: "Bring the little ones along for the fun.",
@@ -53,7 +53,7 @@ const TICKET_TYPES: TicketType[] = [
   },
   {
     id: "vip",
-    name: "VIP Premium Crown",
+    name: "VIP",
     price: 30000,
     emoji: "👑",
     description: "Premium seating, special treats, and the best view.",
@@ -126,9 +126,7 @@ export const TicketSelector: React.FC = () => {
                   <span className="font-mono font-black text-2xl text-white">
                     ₦{ticket.price.toLocaleString()}
                   </span>
-                  <span className="text-neutral-500 text-[10px] uppercase font-mono ml-1">
-                    / person
-                  </span>
+                  
                 </div>
 
                 {/* Description Text */}

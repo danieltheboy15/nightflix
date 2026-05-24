@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
               />
             </div>
             <p className="font-sans text-xs text-neutral-400 max-w-sm">
-              Ibadan's biggest open-air outdoor cinema, interactive games, live pre-shows, and wonderful connections under the starry night sky.
+              The biggest open-air outdoor cinema, interactive games, live pre-shows, and wonderful connections under the starry night sky.
             </p>
           </div>
 
@@ -31,21 +31,14 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-end gap-4">
             <div className="flex gap-4">
               <a
-                href="https://instagram.com/"
+                href="https://www.instagram.com/nightflix_inc/"
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-neutral-900 border border-white/5 flex items-center justify-center text-neutral-400 hover:text-[#EF4444] hover:border-[#EF4444]/30 transiton-all"
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="w-10 h-10 rounded-full bg-neutral-900 border border-white/5 flex items-center justify-center text-neutral-400 hover:text-[#00D2C4] hover:border-[#00D2C4]/30 transiton-all"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
+              
             </div>
             
             <button

@@ -94,11 +94,11 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl skew-y-1">
+          <div className="relative rounded-2xl overflow-hidden border border-white/10 group shadow-2xl skew-y-1 mb-10">
             <img
               src="https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574469/IMG_0197_us70fg.jpg"
               alt="Nightflies cinema attendees sitting under cosmos stars"
-              className="w-full h-80 object-cover opacity-80 group-hover:scale-102 transition-transform duration-700"
+              className="w-full h-[340px] object-cover opacity-80 group-hover:scale-102 transition-transform duration-700"
               referrerPolicy="no-referrer"
             />
             {/* Dark overlay styling */}
