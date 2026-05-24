@@ -55,8 +55,8 @@ export const Hero: React.FC<HeroProps> = ({ onGetTicketClick }) => {
       <div className="relative z-20 max-w-4xl w-full mx-auto flex flex-col items-center mt-2">
         {/* Neon Badge */}
         <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-red-950/40 border border-red-500/30 text-red-500 hover:border-red-500/50 transition-colors duration-300 text-xs font-semibold mb-6 animate-pulse select-none uppercase tracking-widest font-mono">
-          <Sparkles className="w-3.5 h-3.5 text-yellow-500 fill-yellow-500" />
-          Ibadan's Biggest Open-Air Cinema
+          
+          The Biggest Open-Air Cinema
         </div>
 
         {/* Headline */}
@@ -77,17 +77,17 @@ export const Hero: React.FC<HeroProps> = ({ onGetTicketClick }) => {
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-mono text-neutral-400 mb-10 select-none bg-neutral-950/70 border border-white/5 py-3.5 px-6 rounded-2xl backdrop-blur-sm max-w-xl">
           <div className="flex items-center gap-1.5">
             <MapPin className="w-4 h-4 text-red-500" />
-            <span>UI ICC (Open Space), Ibadan</span>
+            <span>Palms Mall, Ringroad, Ibadan</span>
           </div>
           <div className="w-px h-4 bg-neutral-700 hidden sm:block"></div>
           <div className="flex items-center gap-1.5">
             <Calendar className="w-4 h-4 text-amber-500" />
-            <span>Saturday Gates Open</span>
+            <span>Saturday,July 13, 2026.</span>
           </div>
           <div className="w-px h-4 bg-neutral-700 hidden sm:block"></div>
           <div className="flex items-center gap-1.5">
             <Clock className="w-4 h-4 text-[#00D2C4]" />
-            <span>5:00 PM Prompt</span>
+            <span>5:00 PM</span>
           </div>
         </div>
 
