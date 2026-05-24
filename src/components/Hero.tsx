@@ -33,9 +33,9 @@ export const Hero: React.FC<HeroProps> = ({ onGetTicketClick }) => {
           playsInline
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover opacity-75 sm:opacity-85 scale-102 transition-opacity duration-1000"
-          src="https://res.cloudinary.com/dcxy05pvc/video/upload/v1779611606/nf_adssss222222_ykdu58.mp4"
+          src="https://res.cloudinary.com/dcxy05pvc/video/upload/v1779583927/new_date_creative_jgubxr.mp4"
         >
-          <source src="https://res.cloudinary.com/dcxy05pvc/video/upload/v1779611606/nf_adssss222222_ykdu58.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/dcxy05pvc/video/upload/v1779583927/new_date_creative_jgubxr.mp4" type="video/mp4" />
         </video>
         {/* Layered overlays optimized for excellent video visibility and perfect text readability */}
         <div className="absolute inset-0 bg-black/45 mix-blend-multiply" />
