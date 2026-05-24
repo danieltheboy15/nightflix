@@ -97,10 +97,8 @@ export const Hero: React.FC<HeroProps> = ({ onGetTicketClick }) => {
           id="get-ticket-btn"
           className="relative group inline-flex items-center gap-3 bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-500 hover:to-rose-600 text-white font-heading font-black tracking-widest text-base sm:text-xl px-8 sm:px-10 py-5 rounded-2xl shadow-[0_4px_25px_rgba(239,68,68,0.4)] transition-all duration-300 hover:scale-103 active:scale-98 border border-white/10 uppercase cursor-pointer z-20"
         >
-          <span>👉 GET YOUR TICKET NOW</span>
-          <span className="p-1 rounded-lg bg-white/10">
-            <Ticket className="w-5 h-5 text-yellow-300 group-hover:rotate-12 transition-transform" />
-          </span>
+          <span>GET YOUR TICKET NOW</span>
+          
           <span className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </button>
       </div>
