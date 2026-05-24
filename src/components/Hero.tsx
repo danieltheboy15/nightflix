@@ -9,33 +9,38 @@ export const Hero: React.FC<HeroProps> = ({ onGetTicketClick }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    // Attempt autoplay if restricted by browser defaults
+    // Force muted states to bypass standard browser autoplay restriction models
     if (videoRef.current) {
-      videoRef.current.play().catch(() => {
-        // Fallback or silent catch is benign
+      videoRef.current.defaultMuted = true;
+      videoRef.current.muted = true;
+      videoRef.current.preload = "auto";
+      videoRef.current.play().catch((err) => {
+        // Silently log fallback block if any
+        console.log("Auto-playing video: interaction fallback activated", err);
       });
     }
   }, []);
 
   return (
-    <div className="relative pt-20 pb-0 flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-[#030305] mb-[30px]">
+    <div className="relative min-h-[75vh] sm:min-h-[85vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden bg-[#030305] mb-[30px] pt-24 pb-12 sm:pt-32">
       {/* Background Video element */}
-      <div className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0 overflow-hidden">
+      <div className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0 overflow-hidden bg-[#030305]">
         <video
           ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-35 scale-102 transition-opacity duration-1000"
-          src="https://assets.mixkit.co/videos/preview/mixkit-people-watching-a-movie-at-an-outdoor-cinema-42021-large.mp4"
-          poster="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1920&auto=format&fit=crop"
-        />
-        {/* Soft layered overlays for cinematic richness */}
-        <div className="absolute inset-0 bg-[#000000]/60 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#030205] via-transparent to-[#030205]/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#030205]/40 via-transparent to-[#030205]/40" />
-        <div className="absolute inset-0 bg-grid-white opacity-40" />
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover opacity-75 sm:opacity-85 scale-102 transition-opacity duration-1000"
+          src="https://res.cloudinary.com/dcxy05pvc/video/upload/v1779583927/new_date_creative_jgubxr.mp4"
+        >
+          <source src="https://res.cloudinary.com/dcxy05pvc/video/upload/v1779583927/new_date_creative_jgubxr.mp4" type="video/mp4" />
+        </video>
+        {/* Layered overlays optimized for excellent video visibility and perfect text readability */}
+        <div className="absolute inset-0 bg-black/45 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#030205] via-[#030205]/10 to-[#030205]/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#030205]/45 via-transparent to-[#030205]/45" />
       </div>
 
       {/* Floating Sparkling Stars or Ambient Fairy Lights Overlay */}
