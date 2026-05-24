@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { SponsorsTicker } from "./components/SponsorsTicker";
 import { Hero } from "./components/Hero";
 import { SponsorsRow } from "./components/SponsorsRow";
@@ -16,11 +16,59 @@ export default function App() {
   const ticketSectionRef = useRef<HTMLDivElement>(null);
   const hookSectionRef = useRef<HTMLDivElement>(null);
 
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const handlePathChange = () => {
+      setCurrentPath(window.location.pathname);
+    };
+    window.addEventListener("popstate", handlePathChange);
+    return () => window.removeEventListener("popstate", handlePathChange);
+  }, []);
+
+  const isPlaygroundPath =
+    currentPath === "/the-playgroud-edition" ||
+    currentPath === "/the-playgroud-edition/" ||
+    currentPath.endsWith("/the-playgroud-edition") ||
+    currentPath.endsWith("/the-playgroud-edition/");
+
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+
+  if (!isPlaygroundPath) {
+    return (
+      <div className="min-h-screen bg-[#030205] text-white flex flex-col items-center justify-center p-6 font-sans">
+        <div className="max-w-md w-full text-center space-y-6">
+          <div className="flex justify-center">
+            <img 
+              src="https://res.cloudinary.com/dcxy05pvc/image/upload/v1779574153/IMG_0185_vk68jn.png" 
+              alt="NIGHTFLIX Logo" 
+              className="h-28 sm:h-32 w-auto object-contain animate-fade-in"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+          <div className="space-y-2">
+            <h1 className="font-heading font-black text-4xl tracking-tight text-white">404</h1>
+            <p className="text-neutral-400 text-xs sm:text-sm font-mono uppercase tracking-wider">Page Not Found</p>
+            <p className="text-neutral-500 text-xs max-w-xs mx-auto">
+              This project has been configured to reside exclusively on the playground edition subdirectory.
+            </p>
+          </div>
+          <div className="pt-2">
+            <a
+              href="/the-playgroud-edition"
+              className="inline-block px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-mono text-xs uppercase tracking-widest font-bold rounded-xl transition-all shadow-lg hover:shadow-red-900/40"
+            >
+              Enter Playground Edition
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#030205] text-white selection:bg-red-600 selection:text-white overflow-x-hidden font-sans">
