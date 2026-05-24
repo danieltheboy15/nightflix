@@ -27,10 +27,10 @@ export default function App() {
   }, []);
 
   const isPlaygroundPath =
-    currentPath === "/the-playgroud-edition" ||
-    currentPath === "/the-playgroud-edition/" ||
-    currentPath.endsWith("/the-playgroud-edition") ||
-    currentPath.endsWith("/the-playgroud-edition/");
+    currentPath === "/the-playground-edition" ||
+    currentPath === "/the-playground-edition/" ||
+    currentPath.endsWith("/the-playground-edition") ||
+    currentPath.endsWith("/the-playground-edition/");
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
@@ -59,7 +59,7 @@ export default function App() {
           </div>
           <div className="pt-2">
             <a
-              href="/the-playgroud-edition"
+              href="/the-playground-edition"
               className="inline-block px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-mono text-xs uppercase tracking-widest font-bold rounded-xl transition-all shadow-lg hover:shadow-red-900/40"
             >
               Enter Playground Edition
