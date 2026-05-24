@@ -102,20 +102,7 @@ export default function App() {
               referrerPolicy="no-referrer"
             />
             {/* Dark overlay styling */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-            <div className="absolute bottom-5 left-5 right-5 flex justify-between items-end">
-              <div>
-                <span className="font-mono text-[9px] uppercase tracking-widest text-[#FBBF24] font-bold block mb-1">
-                  CURRENT SCENE SPOTLIGHT
-                </span>
-                <span className="font-heading font-extrabold text-sm text-white">
-                  UI International Conference Center Ground
-                </span>
-              </div>
-              <span className="px-2.5 py-1 bg-red-600 text-[10px] font-mono uppercase font-black tracking-widest rounded text-center">
-                LIVE
-              </span>
-            </div>
+            
           </div>
         </div>
       </div>
