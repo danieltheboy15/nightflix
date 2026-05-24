@@ -114,9 +114,7 @@ export const TicketSelector: React.FC = () => {
                       <h3 className="font-heading font-black text-white text-lg tracking-tight group-hover:text-red-400 transition-colors">
                         {ticket.name}
                       </h3>
-                      <span className="font-mono text-[9px] text-neutral-400 uppercase tracking-widest font-bold">
-                        {ticket.id} vibe
-                      </span>
+                      
                     </div>
                   </div>
                 </div>
