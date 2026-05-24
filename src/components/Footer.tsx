@@ -38,7 +38,14 @@ export const Footer: React.FC = () => {
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              
+              <a
+                href="https://x.com/NightflixI90054"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 rounded-full bg-neutral-900 border border-white/5 flex items-center justify-center text-neutral-400 hover:text-[#00D2C4] hover:border-[#00D2C4]/30 transiton-all"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
             </div>
             
             <button

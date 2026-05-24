@@ -69,7 +69,7 @@ const TICKET_TYPES: TicketType[] = [
 
 export const TicketSelector: React.FC = () => {
   const handleRedirectToSelar = () => {
-    window.open("https://selar.co/m/nightflix-ibadan", "_blank");
+    window.open("https://selar.co/gf6t5nv489", "_blank");
   };
 
   return (
@@ -153,7 +153,7 @@ export const TicketSelector: React.FC = () => {
                 }}
                 className="w-full bg-[#16141F] group-hover:bg-red-600 text-[#D1D5DB] group-hover:text-white font-heading font-extrabold text-xs py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 border border-white/5 group-hover:border-red-500/20 cursor-pointer"
               >
-                <span>👉 GET TICKET</span>
+                <span>GET TICKET</span>
                 <ExternalLink className="w-3.5 h-3.5 opacity-65 group-hover:opacity-100 transition-opacity" />
               </button>
             </div>
