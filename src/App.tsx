@@ -16,14 +16,6 @@ export default function App() {
   const ticketSectionRef = useRef<HTMLDivElement>(null);
   const hookSectionRef = useRef<HTMLDivElement>(null);
 
-  React.useEffect(() => {
-    const currentPath = window.location.pathname;
-    // Auto-rewrite the URL path on client-side to keep user on /the_playground_edition
-    if (currentPath === "/" || currentPath === "" || currentPath === "/index.html") {
-      window.history.replaceState(null, "", "/the_playground_edition");
-    }
-  }, []);
-
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
