@@ -82,7 +82,7 @@ export const Hero: React.FC<HeroProps> = ({ onGetTicketClick }) => {
           <div className="w-px h-4 bg-neutral-700 hidden sm:block"></div>
           <div className="flex items-center gap-1.5">
             <Calendar className="w-4 h-4 text-amber-500" />
-            <span>Saturday,July 13, 2026.</span>
+            <span>Saturday,June 13, 2026.</span>
           </div>
           <div className="w-px h-4 bg-neutral-700 hidden sm:block"></div>
           <div className="flex items-center gap-1.5">
