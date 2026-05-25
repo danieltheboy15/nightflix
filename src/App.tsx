@@ -27,10 +27,10 @@ export default function App() {
   }, []);
 
   const isPlaygroundPath =
-    currentPath === "/the-playground-edition" ||
-    currentPath === "/the-playground-edition/" ||
-    currentPath.endsWith("/the-playground-edition") ||
-    currentPath.endsWith("/the-playground-edition/");
+    currentPath.includes("the-playground-edition") ||
+    window.location.hostname.includes("localhost") ||
+    window.location.hostname.includes("run.app") ||
+    window.location.hostname.includes("aistudio");
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {

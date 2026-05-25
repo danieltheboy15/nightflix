@@ -1,8 +1,8 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/the-playground-edition", "destination": "/index.html" },
-    { "source": "/the-playground-edition/(.*)", "destination": "/index.html" },
+    { "source": "/the-playground-edition/(.*)", "destination": "/the-playground-edition/index.html" },
+    { "source": "/the-playground-edition", "destination": "/the-playground-edition/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
