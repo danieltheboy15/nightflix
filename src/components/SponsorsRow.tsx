@@ -9,8 +9,8 @@ export const SponsorsRow: React.FC = () => {
           PROUDLY SPONSORED AND SUPPORTED BY
         </p>
 
-        {/* Structured grid of sponsor logos */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-16 px-4 justify-items-center items-center">
+        {/* Structured grid of sponsor logos with negative vertical margins on mobile rows */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-4 sm:gap-y-16 px-4 justify-items-center items-center">
           {(() => {
             // 1. Filter out the rokswood sponsor (ID: rokswood, URL: ...IMG_0187_mbzk6y.png)
             const filtered = SPONSORS_LIST.filter(s => s.id !== "rokswood");
@@ -26,7 +26,7 @@ export const SponsorsRow: React.FC = () => {
             const displaySponsors = [specialSponsor, ...filtered];
 
             return displaySponsors.map((sponsor) => (
-              <div key={sponsor.id} className="flex items-center justify-center p-3 animate-fade-in">
+              <div key={sponsor.id} className="flex items-center justify-center p-3 mt-[15px] mb-[-25px] sm:mt-0 sm:mb-0 animate-fade-in">
                 <SponsorLogoItem
                   sponsor={sponsor}
                   imgClassName="h-20 sm:h-24 md:h-28"
